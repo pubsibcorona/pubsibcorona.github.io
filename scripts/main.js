@@ -36,31 +36,4 @@ $(document).ready(function () {
     });
 
 
-
-    // POPUP
-
-    $('.btn-menu').on('click', function(event){
-        event.preventDefault();
-        $('.wrapper-popup').fadeIn(400,
-            function(){
-                $('.popup')
-                    .css('display', 'block')
-                    .animate({opacity: 1}, 200);
-            });
-    });
-
-    $('.popup-close, .wrapper-popup').on('click', function(){
-        $('.popup')
-            .animate({opacity: 0}, 200,
-                function(){
-                    $(this).css('display', 'none');
-                    $('.wrapper-popup').fadeOut(400);
-                }
-            );
-    });
-
-
-
-
-
 });
